@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 import BlogHome from './BlogCards';
 
 import { isArrayEmpty as checkArrayIsEmpty } from './utils';
