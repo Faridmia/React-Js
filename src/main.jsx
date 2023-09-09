@@ -15,7 +15,7 @@ class Clock extends React.Component {
        
       return (
           <h1 className='heading'>
-            <span className='text'>hello world {new Date().toLocaleTimeString()}</span>
+            <span className='text'>hello world {this.props.children} {new Date().toLocaleTimeString(this.props.locale)}</span>
           </h1>
       );
         
@@ -23,4 +23,4 @@ class Clock extends React.Component {
 }
 
 // ReactDOM.render(<Clock locale="bn-BD"/>, document.getElementById('root'));
-ReactDOM.render(<Clock />, document.getElementById('root'));
+ReactDOM.render(<Clock locale="bn-BD">hello academy</Clock>, document.getElementById('root'));
