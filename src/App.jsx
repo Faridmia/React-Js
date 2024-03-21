@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Clock from './components/clock'
 import './App.css'
+import './components/Boilingverdict'
 
 function App() {
   
