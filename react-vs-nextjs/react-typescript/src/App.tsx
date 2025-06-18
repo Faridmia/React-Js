@@ -1,4 +1,5 @@
 import "./App.css";
+import Demo from "./component/ConditionalRendering/Demo";
 import PackingList from "./component/ConditionalRendering/PackingList";
 import ContactFrom from "./component/ContactFrom";
 import { CounterButtons } from "./component/CounterButtons";
@@ -19,6 +20,7 @@ export default function App() {
         <TodoList />
         <Profile />
         <PackingList />
+        <Demo />
       </div>
     </>
   );
