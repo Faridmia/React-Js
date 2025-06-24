@@ -8,6 +8,7 @@ import { CounterDisplay } from "./component/CounterDisplay";
 import TodoList from "./component/CurlyBracket";
 import Darklight from "./component/dark-light-switcher/Darklight";
 import Form from "./component/Form";
+import Form5 from "./component/objectupdate";
 import Profile from "./component/PropsComponent/Imagecomponent";
 import Gallery2 from "./component/rendercommit";
 import List from "./component/RenderingList/List";
@@ -46,6 +47,7 @@ export default function App() {
         <Form />
         <Counter2 />
         <UserProfile />
+        <Form5 />
       </div>
     </>
   );
