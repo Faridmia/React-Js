@@ -17,6 +17,8 @@ import RecipeApp from "./component/RenderingList/Recipe2";
 import RecipeList from "./component/RenderingList/Recipies";
 import Toolbar from "./component/ResponseEvent/Responseevent";
 import Gallery from "./component/StateMemory";
+import Counter2 from "./component/StateUpdater";
+import UserProfile from "./component/UserProfile";
 export default function App() {
   return (
     <>
@@ -42,6 +44,8 @@ export default function App() {
         <Gallery />
         <Gallery2 />
         <Form />
+        <Counter2 />
+        <UserProfile />
       </div>
     </>
   );
