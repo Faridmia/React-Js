@@ -4,6 +4,8 @@ import Demo from "./component/ConditionalRendering/Demo";
 import PackingList from "./component/ConditionalRendering/PackingList";
 import ContactFrom from "./component/ContactFrom";
 import ContextApifarid from "./component/ContextApi/ContextApi";
+import ImageContext from "./component/ContextApi/ImageContext";
+import ProfilePage from "./component/ContextApi/ProfilePage";
 import { CounterButtons } from "./component/CounterButtons";
 import { CounterProvider } from "./component/CounterContext";
 import { CounterDisplay } from "./component/CounterDisplay";
@@ -60,6 +62,8 @@ export default function App() {
         <CounterAdvanced />
         <TaskApp />
         <ContextApifarid />
+        <ProfilePage />
+        <ImageContext />
       </div>
     </>
   );
