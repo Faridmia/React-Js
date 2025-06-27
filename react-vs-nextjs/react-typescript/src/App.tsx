@@ -1,4 +1,5 @@
 import "./App.css";
+import List2 from "./component/AddRemove";
 import Demo from "./component/ConditionalRendering/Demo";
 import PackingList from "./component/ConditionalRendering/PackingList";
 import ContactFrom from "./component/ContactFrom";
@@ -8,8 +9,11 @@ import { CounterDisplay } from "./component/CounterDisplay";
 import TodoList from "./component/CurlyBracket";
 import Darklight from "./component/dark-light-switcher/Darklight";
 import Form from "./component/Form";
+import FormSubmit from "./component/ManagingState/Answerfield";
+import Messenger from "./component/ManagingState/Parentcontact";
 import Form5 from "./component/objectupdate";
 import Profile from "./component/PropsComponent/Imagecomponent";
+import CounterAdvanced from "./component/Reducer";
 import Gallery2 from "./component/rendercommit";
 import List from "./component/RenderingList/List";
 import MainList from "./component/RenderingList/Mainlist";
@@ -19,6 +23,7 @@ import RecipeList from "./component/RenderingList/Recipies";
 import Toolbar from "./component/ResponseEvent/Responseevent";
 import Gallery from "./component/StateMemory";
 import Counter2 from "./component/StateUpdater";
+import TaskApp from "./component/Taskapp/taskapp";
 import UserProfile from "./component/UserProfile";
 export default function App() {
   return (
@@ -48,6 +53,11 @@ export default function App() {
         <Counter2 />
         <UserProfile />
         <Form5 />
+        <List2 />
+        <FormSubmit />
+        <Messenger />
+        <CounterAdvanced />
+        <TaskApp />
       </div>
     </>
   );
