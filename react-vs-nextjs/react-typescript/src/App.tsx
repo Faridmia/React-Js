@@ -3,6 +3,7 @@ import List2 from "./component/AddRemove";
 import Demo from "./component/ConditionalRendering/Demo";
 import PackingList from "./component/ConditionalRendering/PackingList";
 import ContactFrom from "./component/ContactFrom";
+import ContextApifarid from "./component/ContextApi/ContextApi";
 import { CounterButtons } from "./component/CounterButtons";
 import { CounterProvider } from "./component/CounterContext";
 import { CounterDisplay } from "./component/CounterDisplay";
@@ -58,6 +59,7 @@ export default function App() {
         <Messenger />
         <CounterAdvanced />
         <TaskApp />
+        <ContextApifarid />
       </div>
     </>
   );
