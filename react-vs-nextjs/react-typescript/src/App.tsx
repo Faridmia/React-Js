@@ -14,6 +14,7 @@ import { CounterDisplay } from "./component/CounterDisplay";
 import TodoList from "./component/CurlyBracket";
 import Darklight from "./component/dark-light-switcher/Darklight";
 import Form from "./component/Form";
+import InputData from "./component/inputField";
 import FormSubmit from "./component/ManagingState/Answerfield";
 import Messenger from "./component/ManagingState/Parentcontact";
 import MountUnmountData from "./component/MountUnmount";
@@ -74,6 +75,7 @@ export default function App() {
         <ShowRef />
         <VideoApp />
         <MountUnmountData />
+        <InputData />
       </div>
     </>
   );
