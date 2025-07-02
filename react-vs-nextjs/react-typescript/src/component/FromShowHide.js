@@ -1,27 +1,23 @@
 import { useState } from "react";
 
-export default function App() {
-  const [showForm, setShowForm] = useState(true); // State to control form visibility
-  const [name, setName] = useState(""); // State for the input name
-  const [isUppercase, setIsUppercase] = useState(false); // State for the uppercase checkbox
+export default function ComponentApp() {
+  const [showForm, setShowForm] = useState(true);
+  const [name, setName] = useState("");
+  const [isUppercase, setIsUppercase] = useState(false);
 
-  // Handler for name input changes
   const handleNameChange = (e) => {
     setName(e.target.value);
   };
 
-  // Handler for uppercase checkbox changes
   const handleUppercaseChange = (e) => {
     setIsUppercase(e.target.checked);
   };
 
-  // Determine the displayed name based on the checkbox
   const displayedName = isUppercase ? name.toUpperCase() : name;
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4 font-sans">
       <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-lg">
-        {/* Toggle form visibility button */}
         <button
           onClick={() => setShowForm(!showForm)}
           className="mb-6 px-6 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-200 ease-in-out shadow-sm"
@@ -29,10 +25,8 @@ export default function App() {
           {showForm ? "Hide form" : "Show form"}
         </button>
 
-        {/* Form content, conditionally rendered */}
         {showForm && (
           <div className="space-y-6">
-            {/* Name input section */}
             <div>
               <label
                 htmlFor="nameInput"
@@ -50,7 +44,6 @@ export default function App() {
               />
             </div>
 
-            {/* Uppercase checkbox section */}
             <div className="flex items-center">
               <input
                 id="uppercaseCheckbox"
@@ -67,8 +60,7 @@ export default function App() {
               </label>
             </div>
 
-            {/* Greeting message */}
-            {name && ( // Only show greeting if name is not empty
+            {name && (
               <p className="text-gray-800 text-lg">
                 Hello,{" "}
                 <span className="font-bold text-blue-600">{displayedName}</span>
