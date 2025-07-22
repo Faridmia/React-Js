@@ -1,5 +1,6 @@
 import "./App.css";
 import CounterView from "./components/features/counter/counterview.js";
+import PostView from "./components/features/posts/postview.js";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       {/* <Counter />
       <Todos /> */}
       <CounterView />
+      <PostView />
     </div>
   );
 }
